@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Class Field</title>
+</head>
+<body>
+    <script>
+        class Configuration{
+            // tidak ikut objek nya lagi //Tidak usah bikin objek lagi pas call
+            static name = "Belajar Javascript Dasar";
+            static version = 1.0;
+            static author = "Yoga Eka Pratama";
+        }
+
+        const config = new Configuration();
+
+        Configuration.author = "Eko Kurniawan";
+        
+        console.log(config);
+        console.log(Configuration.name);
+        console.log(Configuration.version);
+        console.log(Configuration.author);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Cunstroctor</title>
+</head>
+<body>
+    <script>
+
+        // Tanpa Parameter
+        // function Person(){
+        //     this.firstName = "";
+        //     this.lastName = "";
+        //     this.sayHello = function(name) {
+        //         console.log(`Hello ${name}, My name is ${this.firstName}`);
+        //     }
+        // }
+
+
+        // Dengan Parameter
+        function Person(firstName,lastName){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function(name) {
+                console.log(`Hello ${name}, My name is ${this.firstName} ${this.lastName}`);
+            }
+        }
+
+        const yoga = new Person("Yoga","Pratama");
+        yoga.sayHello("Joko");
+
+        console.log(yoga)
+    </script>
+</body>
+</html>
